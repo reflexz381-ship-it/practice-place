@@ -1,4 +1,5 @@
 name: Test my Docker skills
+
 on:
   push:
     branches: [ main ]
@@ -8,12 +9,13 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    
     steps:
       - name: Checkout code
-      - uses: actions/checkout@v4
-
+        uses: actions/checkout@v4
+      
       - name: Test Docker is available
         run: docker --version
-
-      - name: Test I can run a container
+      
+      - name: Test Docker can run a container
         run: docker run hello-world
