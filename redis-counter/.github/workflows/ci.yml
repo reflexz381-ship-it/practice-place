@@ -1,0 +1,35 @@
+name: Test Redis Counter
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t redis-counter .
+
+      - name: Run tests (no Redis needed)
+        run: docker run --rm redis-counter python -m pytest
+
+      - name: Integration test with Redis
+        run: |
+          docker network create test-net
+          docker run -d --name redis --network test-net redis:alpine
+          docker run --rm --network test-net -e REDIS_HOST=redis redis-counter python -c "
+
+import time
+time.sleep(2)
+import requests
+r = requests.get('http://app:8080')
+print(r.text)
+assert '1 times' in r.text
+"
+          docker stop redis
+          docker rm redis
+          docker network rm test-rm
