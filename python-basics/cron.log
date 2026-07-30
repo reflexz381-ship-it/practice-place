@@ -1,0 +1,88 @@
+Checking 4 services...
+https://google.com: OK (HTTP 200)
+https://github.com: OK (HTTP 200)
+https://httpbin.org/status/404: ERROR (HTTP 503)
+https://httpbin.org/status/500: ERROR (HTTP 503)
+
+Checking ping targets...
+8.8.8.8: OK (Ping successful)
+1.1.1.1: OK (Ping successful)
+
+Results written to monitor.log
+Checking 4 services...
+https://google.com: OK (HTTP 200)
+https://github.com: OK (HTTP 200)
+https://httpbin.org/status/404: ERROR (Timeout)
+https://httpbin.org/status/500: ERROR (Timeout)
+
+Checking ping targets...
+8.8.8.8: OK (Ping successful)
+1.1.1.1: OK (Ping successful)
+
+Results written to monitor.log
+Checking 4 services...
+https://google.com: OK (HTTP 200)
+https://github.com: OK (HTTP 200)
+https://httpbin.org/status/404: ERROR (Timeout)
+https://httpbin.org/status/500: ERROR (HTTP 500)
+
+Checking ping targets...
+8.8.8.8: OK (Ping successful)
+1.1.1.1: OK (Ping successful)
+
+Results written to monitor.log
+Checking 4 services...
+https://google.com: OK (HTTP 200)
+https://github.com: OK (HTTP 200)
+https://httpbin.org/status/404: ERROR (HTTP 503)
+https://httpbin.org/status/500: ERROR (HTTP 503)
+
+Checking ping targets...
+8.8.8.8: OK (Ping successful)
+1.1.1.1: OK (Ping successful)
+
+Results written to monitor.log
+Checking 4 services...
+https://google.com: OK (HTTP 200)
+https://github.com: OK (HTTP 200)
+https://httpbin.org/status/404: ERROR (HTTP 503)
+https://httpbin.org/status/500: ERROR (HTTP 503)
+
+Checking ping targets...
+8.8.8.8: OK (Ping successful)
+1.1.1.1: OK (Ping successful)
+
+Results written to monitor.log
+Checking 4 services...
+https://google.com: OK (HTTP 200)
+https://github.com: OK (HTTP 200)
+https://httpbin.org/status/404: ERROR (HTTP 503)
+https://httpbin.org/status/500: ERROR (HTTP 503)
+
+Checking ping targets...
+8.8.8.8: OK (Ping successful)
+1.1.1.1: OK (Ping successful)
+
+Results written to monitor.log
+Checking 4 services...
+https://google.com: OK (HTTP 200)
+https://github.com: OK (HTTP 200)
+https://httpbin.org/status/404: ERROR (HTTP 503)
+https://httpbin.org/status/500: ERROR (HTTP 503)
+
+Checking ping targets...
+8.8.8.8: OK (Ping successful)
+1.1.1.1: OK (Ping successful)
+
+Results written to monitor.log
+Checking 4 services...
+https://google.com: OK (HTTP 200)
+https://github.com: OK (HTTP 200)
+https://httpbin.org/status/404: ERROR (HTTP 503)
+https://httpbin.org/status/500: ERROR (HTTP 503)
+
+Checking ping targets...
+8.8.8.8: OK (Ping successful)
+1.1.1.1: OK (Ping successful)
+
+Results written to monitor.log

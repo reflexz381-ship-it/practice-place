@@ -1,4 +1,2 @@
 https://google.com
 https://github.com
-https://deepseek.com
-https://faketest.com
