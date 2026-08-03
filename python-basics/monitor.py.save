@@ -1,7 +1,0 @@
-import requests
-import datetime
-import time
-
-LOG_FILE = "monitor.log"
-
-def log_message(service, status, deta
